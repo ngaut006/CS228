@@ -53,14 +53,23 @@ The script will train the VGG16 model on the specified dataset and display the t
 The code assumes that you have a dataset in a specific format. You need to organize your dataset in separate directories for each class. The directory structure should be as follows:
 
 dataset/
+
 ├── class1/
+
 │ ├── image1.jpg
+
 │ ├── image2.jpg
+
 │ └── ...
+
 ├── class2/
+
 │ ├── image1.jpg
+
 │ ├── image2.jpg
+
 │ └── ...
+
 └── ...
 
 
