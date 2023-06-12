@@ -1,43 +1,71 @@
 # Final Project - VGG16
 
-This repository contains the code for the final project of CS228. The project focuses on implementing and applying the VGG16 convolutional neural network architecture for image classification tasks.
+This repository contains the code for a VGG16 model implementation for image classification. The code is written in Python and uses the TensorFlow library.
 
-## Code
+## Contents
 
-The code for the project is available in the Jupyter Notebook file named `final_version_vgg16.ipynb`. This notebook provides step-by-step explanations and code snippets for implementing the VGG16 model, training it on a specific dataset, and evaluating its performance.
+The repository contains the following files:
 
-## Dataset
+- `model2_vgg16_runnable.py`: This is the main Python file that implements the VGG16 model and provides a runnable script to train and evaluate the model on a given dataset.
+- `README.md`: This file provides an overview of the repository and instructions for running the code.
 
-To run the code successfully, you will need to provide a suitable dataset. The notebook assumes that you have a dataset structured in a specific format, which is explained within the notebook itself. Make sure to modify the relevant sections of the code to point to your dataset and adjust any necessary parameters.
+## Dependencies
 
-## Requirements
-
-The code in this project has been developed using Python and relies on several libraries and frameworks. Before running the notebook, make sure you have the following dependencies installed:
+To run the code, the following dependencies are required:
 
 - Python 3.x
-- Jupyter Notebook
-- TensorFlow
-- Keras
+- TensorFlow 2.x
 - NumPy
 - Matplotlib
 
-You can install these dependencies using `pip` or `conda` by running the following command:
+You can install the required dependencies using pip:
+
 
 *pip install tensorflow keras numpy matplotlib*
 
 
+
 ## Usage
 
-To use this code, follow these steps:
+To use the VGG16 model for image classification, follow these steps:
 
-1. Clone or download this repository to your local machine.
-2. Install the required dependencies as mentioned above.
-3. Open the Jupyter Notebook `final_version_vgg16.ipynb` using Jupyter Notebook or any compatible environment.
-4. Modify the code as necessary to match your dataset and requirements.
-5. Run the notebook cells sequentially to train and evaluate the VGG16 model.
+1. Clone the repository to your local machine:
 
-Note: Training a deep learning model may require significant computational resources, so make sure you have access to a suitable GPU or use cloud-based services like Google Colab for accelerated training.
+*git clone https://github.com/ngaut006/CS228.git*
 
-## Credits
 
-This project is based on the CS228 course and makes use of the VGG16 architecture, which was originally proposed by Simonyan and Zisserman. The code and implementation have been developed by [Nityash Gautam].
+2. Navigate to the project directory:
+
+*cd CS228/Project/Final Project vgg16*
+
+
+3. Open the `model2_vgg16_runnable.py` file and modify the paths as needed. You can specify the dataset directory, number of classes, training and validation split, batch size, number of epochs, etc.
+
+4. Run the script:
+
+*python model2_vgg16_runnable.py*
+
+
+The script will train the VGG16 model on the specified dataset and display the training and validation accuracy over each epoch. After training, it will evaluate the model on the test set and print the test accuracy.
+
+## Dataset
+
+The code assumes that you have a dataset in a specific format. You need to organize your dataset in separate directories for each class. The directory structure should be as follows:
+
+dataset/
+├── class1/
+│ ├── image1.jpg
+│ ├── image2.jpg
+│ └── ...
+├── class2/
+│ ├── image1.jpg
+│ ├── image2.jpg
+│ └── ...
+└── ...
+
+
+You need to provide the path to this dataset directory in the `model2_vgg16_runnable.py` file.
+
+## License
+
+The code in this repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code for personal or commercial projects.
