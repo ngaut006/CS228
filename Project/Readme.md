@@ -33,6 +33,9 @@ To use the VGG16 model for image classification, follow these steps:
 The script will train the VGG16 model on the specified dataset and display the training and validation accuracy over each epoch. After training, it will evaluate the model on the test set and print the test accuracy.
 
 ## Dataset
+
+**THE DATASET IS CREATED BY US BY SCRAPPING WEBSITES USING A SELF-BUILT WEB SCRAPER. IN ORDER TO USE THE DATASET, KINDLY REACHOUT TO US VIA E-MAIL**
+
 The code assumes that you have a dataset in a specific format. You need to organize your dataset in separate directories for each class. The directory structure should be as follows:
 
 
