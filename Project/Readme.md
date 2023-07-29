@@ -1,4 +1,4 @@
-# Final Project - VGG16
+# Final Project - IMAGE COLORIZATION
 
 This repository contains the code for a VGG16 model implementation for image classification. The code is written in Python and uses the TensorFlow library.
 
